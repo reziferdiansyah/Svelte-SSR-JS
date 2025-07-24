@@ -69,7 +69,7 @@
   }
 
   onMount(() => {
-    interval = setInterval(nextPage, 10000); // ganti setiap 5 detik
+    interval = setInterval(nextPage, 7000); // ganti setiap 7 detik
   });
 
   onDestroy(() => {
