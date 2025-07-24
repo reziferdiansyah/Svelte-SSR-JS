@@ -1,5 +1,7 @@
 <script>
   import { onMount } from 'svelte';
+  import Testimonials from '$lib/components/Testimonials.svelte';
+
 
   // Carousel
   let slides = [
@@ -23,9 +25,11 @@
   const next = () => (current = (current + 1) % slides.length);
   const prev = () => (current = (current - 1 + slides.length) % slides.length);
 
+  // @ts-ignore
   let interval;
   onMount(() => {
     interval = setInterval(next, 5000);
+    // @ts-ignore
     return () => clearInterval(interval);
   });
 
@@ -134,6 +138,8 @@
     </ul>
   </div>
 </section>
+
+<Testimonials />
 
 <!-- CTA Hubungi -->
 <section class="py-16 px-6 md:px-12 bg-blue-100 text-center">
