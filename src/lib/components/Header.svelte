@@ -5,7 +5,7 @@
   }
 </script>
 
-<header class="bg-white shadow-md sticky top-0 z-50">
+<header class="bg-white shadow-md text-textutama sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16">
       <!-- Logo -->
@@ -13,18 +13,21 @@
 
       <!-- Desktop Menu -->
       <nav class="hidden md:flex space-x-4">
-        <a href="/" class="text-gray-700 hover:text-blue-600">Beranda</a>
-        <a href="/about" class="text-gray-700 hover:text-blue-600"
+        <a href="/" class="text-text hover:text-text-hover">Beranda</a>
+        <a href="/about" class="text-text hover:text-text-hover"
           >Tentang Kami</a
         >
-        <a href="/contact" class="text-gray-700 hover:text-blue-600">Kontak</a>
+        <a href="/testimoni" class="text-text hover:text-text-hover"
+          >Testimoni</a
+        >
+        <a href="/contact" class="text-text hover:text-text-hover">Kontak</a>
       </nav>
 
       <!-- Mobile Menu Button -->
       <div class="md:hidden">
         <button
           on:click={toggleMenu}
-          class="text-gray-700 hover:text-blue-600 focus:outline-none"
+          class="text-text hover:text-text-hover focus:outline-none"
         >
           <svg
             class="w-6 h-6"
@@ -59,17 +62,22 @@
       <nav class="px-2 pt-2 pb-4 space-y-1">
         <a
           href="/"
-          class="block px-3 py-2 text-gray-700 hover:bg-blue-100 rounded"
+          class="block px-3 py-2 text-text hover:bg-blue-100 rounded"
           >Beranda</a
         >
         <a
           href="/about"
-          class="block px-3 py-2 text-gray-700 hover:bg-blue-100 rounded"
+          class="block px-3 py-2 text-text hover:bg-blue-100 rounded"
           >Tentang Kami</a
+        >
+          <a
+          href="/testimoni"
+          class="block px-3 py-2 text-text hover:bg-blue-100 rounded"
+          >Testimoni</a
         >
         <a
           href="/contact"
-          class="block px-3 py-2 text-gray-700 hover:bg-blue-100 rounded"
+          class="block px-3 py-2 text-text hover:bg-blue-100 rounded"
           >Kontak</a
         >
       </nav>
