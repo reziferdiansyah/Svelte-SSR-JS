@@ -1,14 +1,19 @@
 <script>
   const year = new Date().getFullYear();
-</script>
+    import WhatsappFloatingButton from '$lib//components/WhatsappFloatingButton.svelte';
+    import ScrollToTopButton from '$lib/components/ScrollToTopButton.svelte';
 
-<footer class="bg-gray-900 text-white py-10 px-6 md:px-12">
+
+</script>
+<WhatsappFloatingButton/>
+<ScrollToTopButton/>
+<footer class="bg-white shadow-md text-black py-10 px-6 md:px-12">
   <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
     
     <!-- Brand / Deskripsi -->
     <div>
       <h2 class="text-2xl font-bold mb-3">SumurBorPro</h2>
-      <p class="text-gray-300">
+      <p class="">
         Layanan jasa sumur bor terpercaya sejak 2013. Siap membantu kebutuhan air bersih Anda dengan teknologi modern dan tim berpengalaman.
       </p>
     </div>
@@ -16,7 +21,7 @@
     <!-- Navigasi Cepat -->
     <div>
       <h3 class="text-xl font-semibold mb-3">Navigasi</h3>
-      <ul class="space-y-2 text-gray-300">
+      <ul class="space-y-2 ">
         <li><a href="/" class="hover:underline">Beranda</a></li>
         <li><a href="/#layanan" class="hover:underline">Layanan</a></li>
         <li><a href="/contact" class="hover:underline">Kontak</a></li>
@@ -27,7 +32,7 @@
     <!-- Kontak -->
     <div>
       <h3 class="text-xl font-semibold mb-3">Hubungi Kami</h3>
-      <ul class="space-y-2 text-gray-300 text-sm">
+      <ul class="space-y-2  text-sm">
         <li>📍 Jl. Sumber Air No. 123, Jakarta Selatan</li>
         <li>📞 <a href="tel:+6281234567890" class="hover:underline">0812-3456-7890</a></li>
         <li>✉️ <a href="mailto:info@sumurborpro.id" class="hover:underline">info@sumurborpro.id</a></li>
