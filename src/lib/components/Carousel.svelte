@@ -51,9 +51,9 @@
       >
         <div class="w-full h-full bg-black bg-opacity-60 flex items-center justify-center px-4">
           <div class="text-center text-white max-w-2xl">
-            <h1 class="text-3xl md:text-5xl font-bold mb-4">{slide.title}</h1>
+            <h1 class="text-3xl md:text-5xl font-bold mb-4 text-blue-100">{slide.title}</h1>
             <p class="text-lg md:text-xl mb-6">{slide.desc}</p>
-            <a href="#layanan" class="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-blue-100 transition">Lihat Layanan</a>
+            <a href="#layanan" class="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-xl font-semibold hover:from-blue-700 hover:to-blue-800 transition">Lihat Layanan</a>
           </div>
         </div>
       </div>
