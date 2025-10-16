@@ -13,7 +13,7 @@
 </svelte:head>
 
 <Header />
-<div class="min-h-screen">
+<div class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
 <slot />
 </div>
 <Footer />

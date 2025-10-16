@@ -1,33 +1,35 @@
 <script>
+  import { page } from '$app/stores';
+
   let isOpen = false;
   function toggleMenu() {
     isOpen = !isOpen;
   }
 </script>
 
-<header class="bg-white shadow-md text-textutama sticky top-0 z-50">
+<header class="bg-gradient-to-r from-white to-blue-50 shadow-md text-textutama sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16">
       <!-- Logo -->
-      <div class="flex-shrink-0 text-xl font-bold text-blue-600">MySite</div>
+      <div class="flex-shrink-0 text-xl font-bold text-blue-700">MySite</div>
 
       <!-- Desktop Menu -->
       <nav class="hidden md:flex space-x-4">
-        <a href="/" class="text-text hover:text-text-hover">Beranda</a>
-        <a href="/about" class="text-text hover:text-text-hover"
+        <a href="/" class="hover:text-blue-600 hover:underline transition {$page.url.pathname === '/' ? 'text-blue-600 underline' : ''}">Beranda</a>
+        <a href="/about" class="hover:text-blue-600 hover:underline transition {$page.url.pathname === '/about' ? 'text-blue-600 underline' : ''}"
           >Tentang Kami</a
         >
-        <a href="/testimoni" class="text-text hover:text-text-hover"
+        <a href="/testimoni" class="hover:text-blue-600 hover:underline transition {$page.url.pathname === '/testimoni' ? 'text-blue-600 underline' : ''}"
           >Testimoni</a
         >
-        <a href="/contact" class="text-text hover:text-text-hover">Kontak</a>
+        <a href="/contact" class="hover:text-blue-600 hover:underline transition {$page.url.pathname === '/contact' ? 'text-blue-600 underline' : ''}">Kontak</a>
       </nav>
 
       <!-- Mobile Menu Button -->
       <div class="md:hidden">
         <button
           on:click={toggleMenu}
-          class="text-text hover:text-text-hover focus:outline-none"
+          class="text-gray-700 hover:text-blue-600 focus:outline-none transition"
         >
           <svg
             class="w-6 h-6"
@@ -58,26 +60,26 @@
 
   <!-- Mobile Menu -->
   {#if isOpen}
-    <div class="md:hidden bg-white shadow">
+    <div class="md:hidden bg-white shadow border-t border-blue-200">
       <nav class="px-2 pt-2 pb-4 space-y-1">
         <a
           href="/"
-          class="block px-3 py-2 text-text hover:bg-blue-100 rounded"
+          class="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition {$page.url.pathname === '/' ? 'text-blue-600 underline' : ''}"
           >Beranda</a
         >
         <a
           href="/about"
-          class="block px-3 py-2 text-text hover:bg-blue-100 rounded"
+          class="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition {$page.url.pathname === '/about' ? 'text-blue-600 underline' : ''}"
           >Tentang Kami</a
         >
           <a
           href="/testimoni"
-          class="block px-3 py-2 text-text hover:bg-blue-100 rounded"
+          class="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition {$page.url.pathname === '/testimoni' ? 'text-blue-600 underline' : ''}"
           >Testimoni</a
         >
         <a
           href="/contact"
-          class="block px-3 py-2 text-text hover:bg-blue-100 rounded"
+          class="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition {$page.url.pathname === '/contact' ? 'text-blue-600 underline' : ''}"
           >Kontak</a
         >
       </nav>
