@@ -2,8 +2,11 @@
 export function load() {
   return {
     meta: {
-      title: 'Testimoni - MySite',
-      description: 'Get in touch with the MySite team for inquiries, support, or feedback.'
+      title: 'Testimoni - Rebor Pro',
+      description: 'Read testimonials from our satisfied customers about Rebor Pro services.',
+      keywords: 'Rebor Pro, testimonials, customer reviews, satisfied customers',
+      canonical: 'https://reborpro.com/testimoni',
+      ogImage: 'https://reborpro.com/images/og-testimoni.jpg'
     }
   };
 }

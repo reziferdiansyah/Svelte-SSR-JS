@@ -6,7 +6,7 @@
     <h2 class="text-4xl font-bold text-gray-800 mb-8">Tentang Kami</h2>
     <div class="text-gray-600 max-w-4xl mx-auto text-lg text-left">
       <p class="mb-6">
-        Selamat datang di [Nama Usaha Anda], penyedia layanan jasa pengeboran
+        Selamat datang di Rebor Pro, penyedia layanan jasa pengeboran
         sumur profesional untuk kebutuhan rumah tangga, pertanian, perkantoran,
         hingga industri.
       </p>
@@ -46,7 +46,7 @@
 
       <p class="mb-6">
         Kami percaya bahwa air bersih adalah kebutuhan dasar yang sangat
-        penting. Karena itu, [Nama Usaha Anda] berkomitmen memberikan hasil
+        penting. Karena itu, Rebor Pro berkomitmen memberikan hasil
         terbaik untuk setiap proyek pengeboran sumur.
       </p>
     </div>

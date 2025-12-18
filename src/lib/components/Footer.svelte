@@ -12,7 +12,7 @@
 
     <!-- Brand / Deskripsi -->
     <div>
-      <h2 class="text-2xl font-bold mb-3">SumurBorPro</h2>
+      <h2 class="text-2xl font-bold mb-3">Rebor Pro</h2>
       <p class="text-white">
         Layanan jasa sumur bor terpercaya sejak 2013. Siap membantu kebutuhan air bersih Anda dengan teknologi modern dan tim berpengalaman.
       </p>
@@ -43,6 +43,6 @@
   </div>
 
   <div class="mt-10 border-t border-white/30 pt-6 text-center text-white/70 text-sm">
-    &copy; {year} SumurBorPro. All rights reserved.
+    &copy; {year} Rebor Pro. All rights reserved.
   </div>
 </footer>

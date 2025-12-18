@@ -16,7 +16,7 @@
     </div>
 
       <!-- Info Kontak -->
-      <div class="text-gray-700 grid grid-cols-2 gap-6">
+      <div class="text-gray-700 grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
           <div class="flex items-center mb-4">
             <svg class="w-8 h-8 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -75,9 +75,8 @@
     <div class="mt-16">
       <h3 class="text-3xl font-bold text-gray-800 text-center mb-8">Lokasi Kami</h3>
       <div class="bg-white p-4 rounded-2xl shadow-lg">
-        <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg flex items-center justify-center">
-          <p class="text-gray-500">Peta lokasi kantor akan ditampilkan di sini</p>
-          <!-- Ganti dengan embed Google Maps atau komponen peta -->
+        <div class="aspect-w-16 aspect-h-9 rounded-lg">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.816666!3d-6.208763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9fb1!2sJl.%20Sumber%20Air%20No.%20123%2C%20Jakarta%20Selatan%2C%20Indonesia!5e0!3m2!1sen!2sid!4v1690000000000!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>

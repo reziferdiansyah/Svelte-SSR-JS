@@ -2,8 +2,19 @@
   import { page } from '$app/stores';
 
   let isOpen = false;
+  let prevPath = $page.url.pathname;
+
   function toggleMenu() {
     isOpen = !isOpen;
+  }
+
+  function closeMenu() {
+    isOpen = false;
+  }
+
+  $: if (prevPath !== $page.url.pathname) {
+    isOpen = false;
+    prevPath = $page.url.pathname;
   }
 </script>
 
@@ -11,7 +22,7 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center h-16">
       <!-- Logo -->
-      <div class="flex-shrink-0 text-xl font-bold text-blue-700">MySite</div>
+      <div class="flex-shrink-0 text-xl font-bold text-blue-700">Rebor Pro</div>
 
       <!-- Desktop Menu -->
       <nav class="hidden md:flex space-x-4">
@@ -64,22 +75,26 @@
       <nav class="px-2 pt-2 pb-4 space-y-1">
         <a
           href="/"
-          class="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition {$page.url.pathname === '/' ? 'text-blue-600 underline' : ''}"
+          on:click={closeMenu}
+          class="block px-3 py-2 hover:bg-blue-50 hover:text-blue-600 rounded transition {$page.url.pathname === '/' ? 'text-blue-600 underline' : ''}"
           >Beranda</a
         >
         <a
           href="/about"
-          class="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition {$page.url.pathname === '/about' ? 'text-blue-600 underline' : ''}"
+          on:click={closeMenu}
+          class="block px-3 py-2 hover:bg-blue-50 hover:text-blue-600 rounded transition {$page.url.pathname === '/about' ? 'text-blue-600 underline' : ''}"
           >Tentang Kami</a
         >
           <a
           href="/testimoni"
-          class="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition {$page.url.pathname === '/testimoni' ? 'text-blue-600 underline' : ''}"
+          on:click={closeMenu}
+          class="block px-3 py-2 hover:bg-blue-50 hover:text-blue-600 rounded transition {$page.url.pathname === '/testimoni' ? 'text-blue-600 underline' : ''}"
           >Testimoni</a
         >
         <a
           href="/contact"
-          class="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition {$page.url.pathname === '/contact' ? 'text-blue-600 underline' : ''}"
+          on:click={closeMenu}
+          class="block px-3 py-2 hover:bg-blue-50 hover:text-blue-600 rounded transition {$page.url.pathname === '/contact' ? 'text-blue-600 underline' : ''}"
           >Kontak</a
         >
       </nav>
